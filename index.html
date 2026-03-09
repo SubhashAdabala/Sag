@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Interactive Website</title>
+
+<style>
+body{
+font-family: Arial;
+text-align: center;
+background-color: lightblue;
+}
+
+header{
+background-color: #333;
+color: white;
+padding: 20px;
+}
+
+button{
+padding: 10px 20px;
+font-size: 16px;
+background-color: green;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+button:hover{
+background-color: darkgreen;
+}
+</style>
+
+<script>
+function changeColor(){
+document.body.style.backgroundColor = "lightgreen";
+document.getElementById("message").innerHTML = "Background color changed!";
+}
+</script>
+
+</head>
+
+<body>
+
+<header>
+<h1>My First JavaScript Website</h1>
+</header>
+
+<h2 id="message">Click the button to change background</h2>
+
+<button onclick="changeColor()">Click Me</button>
+
+</body>
+</html>
